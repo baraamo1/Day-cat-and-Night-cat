@@ -117,7 +117,7 @@ color: green;
     right: -10%;
     top: 87%;
     display: none;
-    transition: right 18s ease;
+    transition: right 3s ease;
 }
 .char{
     display: flex;

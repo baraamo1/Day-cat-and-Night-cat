@@ -226,7 +226,7 @@ function thetime() {
     }
 
     time = time + 10;
-  }, 1000);
+  }, 150);
 }
 
 startbut.onclick = function () {
