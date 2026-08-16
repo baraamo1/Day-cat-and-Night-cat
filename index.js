@@ -17,6 +17,9 @@ let ran1 = Math.floor(Math.random() * 4);
 let ran2 = Math.floor(Math.random() * 4);
 let ran3 = Math.floor(Math.random() * 4);
 let ran4 = Math.floor(Math.random() * 4);
+let yes = new Audio("sounds/freesound_community-nice-sound-effect-95595.mp3");
+let no = new Audio("sounds/eritnhut1992-buzzer-or-wrong-answer-20582.mp3");
+
 let catPosition = -100;
 function check() {
   if (ran1 == ran2 || ran1 == ran3 || ran1 == ran4) {
@@ -82,12 +85,14 @@ function checkrightanswer1() {
     }, 2000);
  catPosition += 150;
     dayc.style.right = catPosition + "px";
+    yes.play();
   } else {
     rel.textContent = "Wrong";
     rel.style.color = "red";
     setTimeout(() => {
       rel.style.display = "none";
     }, 2000);
+    no.play();
   }
 
   console.log("User answer:", c1.textContent);
@@ -109,12 +114,15 @@ function checkrightanswer2() {
     }, 2000);
  catPosition += 130;
     dayc.style.right = catPosition + "px";
+        yes.play();
+
   } else {
     rel.textContent = "Wrong";
     rel.style.color = "red";
     setTimeout(() => {
       rel.style.display = "none";
     }, 2000);
+    no.play();
   }
   console.log("User answer:", c2.textContent);
   console.log("Correct answer:", answerList[level - 1]);
@@ -135,12 +143,15 @@ function checkrightanswer3() {
     }, 2000);
  catPosition += 140;
     dayc.style.right = catPosition + "px";
+        yes.play();
+
   } else {
     rel.textContent = "Wrong";
     rel.style.color = "red";
     setTimeout(() => {
       rel.style.display = "none";
     }, 2000);
+    no.play();
   }
   console.log("User answer:", c3.textContent);
   console.log("Correct answer:", answerList[level - 1]);
@@ -161,12 +172,15 @@ function checkrightanswer4() {
     }, 2000);
  catPosition += 130;
     dayc.style.right = catPosition + "px";
+        yes.play();
+
   } else {
     rel.textContent = "Wrong";
     rel.style.color = "red";
     setTimeout(() => {
       rel.style.display = "none";
     }, 2000);
+    no.play();
   }
 
   console.log(save);
