@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(255, 206, 132);
+}
+#start{
+font-size: 40px;
+border:2px black solid;
+width: fit-content;
+padding: 10px;
+border-radius: 17px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+cursor: pointer;
+background-color: rgb(13, 29, 43);
+color:rgb(255, 206, 132);
+transition: 0.2s;
+}
+#start:hover{
+    transform: translate(-50%, -50%) scale(1.1)  ;
+}
+#equinox{
+    Width: 300px;
+
+}
+#vvv{
+    text-align: center;
+}
+#trys {
+    display: none;
+}
+#timer{
+    display: none;
+    margin: auto;
+    text-align: center;
+    border:solid 2px;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.cats{
+    width: 250px;
+    position: absolute;
+}
+#daycat{
+    top: 65%;
+    left:80%;
+}
+#nightcat{
+    right: 80%;
+    top:10%;
+}
+#qs{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    border: 4px solid;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+}
+#margin{
+    margin: 40px;
+}
+#thqs{
+ font-size: 25px;
+ font-weight: 500;
+
+}
+.choses{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px;
+    border: 1px solid;
+    width: fit-content;
+    transition: 0.2s;
+    font-size: 25px;
+}
+.choses:hover{
+transform: scale(1.2);
+}
+#secchoses{
+  display: flex;
+  text-align: center;
+    margin: auto;
+
+}
+#right_or_wrong{
+    font-size: 100px;
+    position: absolute;
+left:50% ;
+top: 50%;
+transform: translate(-150px, -150px);
+color: green;
+
+
+  font-family: "Chivo Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+}
+#night_char{
+    width: 100px;
+    position: absolute;
+    left: 0%;
+    top: 82%;
+    display: none;
+    transition: right 18s ease;
+}
+#day_char {
+    width: 100px;
+    position: absolute;
+    right: -10%;
+    top: 87%;
+    display: none;
+    transition: right 18s ease;
+}
+.char{
+    display: flex;
+    justify-content: end;
+}
